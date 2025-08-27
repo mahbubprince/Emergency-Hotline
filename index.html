@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawasome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="max-w-[1920px] mx-auto">
+    <!-- nav bar section -->
+    <section class=" md:flex mt-[25px] justify-between mb-[25px] ">
+        <div class="flex  ml-[60px]  ">
+            <img class="h-[50px] w-[50px] " src="assets/logo-dark.png" alt="">
+            <p class="text-[#006747] font-bold ml-[12px]">Emergency <br> service</p>
+        </div>
+        <div class="flex mr-[60px]   ">
+            <div class="bg-[#41ff6a3c] h-[52px] w-[100px] items-center border rounded-[50px] flex justify-center  ">
+                <span class="font-bold text-[20px] mr-[3px]">0</span>
+                <img class="h-[30px] w-[30px]" src="assets/heart.png" alt="">
+            </div class="flex">
+            <div
+                class="ml-[8px] bg-[#41ff6a3c] h-[52px] w-[100px] items-center border rounded-[50px] flex justify-center ">
+                <span class="font-bold text-[20px] mr-[3px]">100</span>
+                <img class="h-[30px] w-[30px]" src="assets/coin.png" alt="">
+            </div class="flex">
+            <div
+                class="ml-[8px] bg-[#41ff6a3c] h-[52px] w-[100px] items-center border rounded-[50px] flex justify-center ">
+                <span class="font-bold text-[20px] mr-[3px]">2 copy</span>
+            </div>
+        </div>
+    </section>
+    <!-- banner section -->
+    <section class="   bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] ">
+        <img class="mx-auto h-[100px] w-[100px] pt-[10px]" src="assets/logo.png" alt="">
+        <p class="mb-[11px] text-center text-white text-[40px]">Emergency Service Directory</p>
+        <p class="  text-center text-white pb-[20px] ">Government Emergency Services at Your Fingertip – A Project by
+            Government of
+            the People’s Republic of Bangladesh</p>
+    </section>
+    <!-- card section -->
+    <section class="md:flex mt-[50px]">
+        <div class="grid grid-cols-1 gap-[30px] mr-[30px] md:grid-cols-3 ">
+            <div class="ml-[25px]  p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px]  ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/emergency.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">National Emergency Number</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">National Emergency</p>
+                    <p class="text-[30px] font-bold">999</p>
+                    <p class=" text-[12px] w-[30px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        All</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#DFEFFF] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/police.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Police Helpline Number</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Police</p>
+                    <p class="text-[30px] font-bold">999</p>
+                    <p class=" text-[12px] w-[50px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        Police</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/fire-service.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Fire Service Number</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Fire Service</p>
+                    <p class="text-[30px] font-bold">999</p>
+                    <p class=" text-[12px] w-[40px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        Fire</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/ambulance.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Ambulance Service</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">mbulance</p>
+                    <p class="text-[30px] font-bold">1994-999999</p>
+                    <p class=" text-[12px] w-[40px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        Health</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/emergency.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Women & Child Helpline</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Women & Child Helpline</p>
+                    <p class="text-[30px] font-bold">109</p>
+                    <p class=" text-[12px] w-[40px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        help</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/emergency.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Anti-Corruption Helpline</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Anti-Corruption</p>
+                    <p class="text-[30px] font-bold">106</p>
+                    <p class=" text-[12px] w-[40px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        Govt.</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/emergency.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Electricity Helpline</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Electricity Outage</p>
+                    <p class="text-[30px] font-bold">16216</p>
+                    <p class=" text-[12px] w-[60px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        Electricity</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center items-center bg-green-500 ">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/emergency.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Brac Helpline</p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Brac</p>
+                    <p class="text-[30px] font-bold">16445</p>
+                    <p class=" text-[12px] w-[50px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        Brac</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border  rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy "></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] rounded-[10px] flex justify-center items-center bg-green-500 ml-[5px]">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[25px] p-[32px] rounded-[12px] bg-white ">
+                <div class="flex justify-between mt-[25px] mb-[16px] ">
+                    <div class="bg-[#FFD6D4] p-[8px] rounded-xl">
+                        <img class="h-[32px] w-[32px] " src="assets/emergency.png" alt="">
+                    </div>
+                    <button class=" btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-[1.2em]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[24px] font-bold">Bangladesh Railway Helpline </p>
+                    <p class="font-[18px] text-gray-500 mb-[24px]">Bangladesh Railway</p>
+                    <p class="text-[30px] font-bold">163</p>
+                    <p class=" text-[12px] w-[40px] rounded-[50px] bg-gray-300 flex justify-center mb-[25px] mt-[3px]">
+                        travel</p>
+                </div>
+                <div class="flex ">
+                    <div class="h-[40px] w-[180px] border  rounded-[10px] flex justify-center items-center">
+                        <p class="font-semibold text-[18px]"><i class="fa-solid fa-copy mr-[3px]"></i> copy</p>
+                    </div>
+                    <div
+                        class="h-[40px] w-[180px] ml-[5px] rounded-[10px] flex justify-center  items-center bg-green-500">
+                        <p class="font-semibold text-[18px] text-white "> <i
+                                class="fa-solid fa-phone mr-[5px] "></i>call
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- call history -->
+        <div class="md:w-[400px]  flex justify-between border p-[20px] rounded-2xl bg-white ">
+            <div class="flex text-[25px]">
+                <i class="fa-solid fa-clock mt-[9px] mr-[5px] "></i>
+                <p class="font-semibold ">Call History</p>
+            </div>
+            <div>
+                <p class="bg-green-500 border px-[40px] py-[10px] rounded-3xl text-white font-semibold">Clear</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
