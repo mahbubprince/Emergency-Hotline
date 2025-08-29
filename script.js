@@ -1,5 +1,8 @@
 // heart count function
 let count = 0
+let callHistory = []
+
+
 
 document.getElementById("card-heart-btn-1").addEventListener("click", function () {
     count++
@@ -58,7 +61,7 @@ document.getElementById("copy-btn-1").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-1").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-2").addEventListener("click", function () {
@@ -67,7 +70,7 @@ document.getElementById("copy-btn-2").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-2").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-3").addEventListener("click", function () {
@@ -76,7 +79,7 @@ document.getElementById("copy-btn-3").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-3").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-4").addEventListener("click", function () {
@@ -85,7 +88,7 @@ document.getElementById("copy-btn-4").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-4").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-5").addEventListener("click", function () {
@@ -94,7 +97,7 @@ document.getElementById("copy-btn-5").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-5").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-6").addEventListener("click", function () {
@@ -103,7 +106,7 @@ document.getElementById("copy-btn-6").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-6").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-7").addEventListener("click", function () {
@@ -112,7 +115,7 @@ document.getElementById("copy-btn-7").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-7").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-8").addEventListener("click", function () {
@@ -121,7 +124,7 @@ document.getElementById("copy-btn-8").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-8").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 document.getElementById("copy-btn-9").addEventListener("click", function () {
@@ -130,7 +133,7 @@ document.getElementById("copy-btn-9").addEventListener("click", function () {
     document.getElementById("copy").textContent = copyCount
     const text = document.getElementById("copy-text-9").textContent
     navigator.clipboard.writeText(text)
-}) 
+})
 
 
 
@@ -141,7 +144,7 @@ const coinContainer = document.getElementById("coin")
 document.getElementById("call-btn-1").addEventListener("click", function () {
     let current = parseInt(coinContainer.textContent)
 
-    console.log("click")
+
     if (current >= 20) {
         alert("Calling Nationnal Emergency!!!    and calling number is ''999'")
     }
@@ -152,7 +155,32 @@ document.getElementById("call-btn-1").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
-})
+    const data = {
+        name: "National Emergency Number",
+        date: new Date().toLocaleTimeString()
+
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>999</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
+}
+)
 
 
 document.getElementById("call-btn-2").addEventListener("click", function () {
@@ -169,6 +197,30 @@ document.getElementById("call-btn-2").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Police Helpline Number",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>999</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 document.getElementById("call-btn-3").addEventListener("click", function () {
     let current = parseInt(coinContainer.textContent)
@@ -184,6 +236,30 @@ document.getElementById("call-btn-3").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Fire Service Number",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>999</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 
 
@@ -201,6 +277,30 @@ document.getElementById("call-btn-4").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Ambulance Service",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>1994-999999</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 
 
@@ -218,6 +318,30 @@ document.getElementById("call-btn-5").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Women & Child Helpline",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>109</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 
 
@@ -235,6 +359,30 @@ document.getElementById("call-btn-6").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Anti-Corruption Helpline",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>106</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 
 
@@ -252,6 +400,30 @@ document.getElementById("call-btn-7").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Electricity Helpline",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>16216</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 
 
@@ -269,6 +441,30 @@ document.getElementById("call-btn-8").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Brac Helpline",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>16445</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
 document.getElementById("call-btn-9").addEventListener("click", function () {
     let current = parseInt(coinContainer.textContent)
@@ -284,6 +480,43 @@ document.getElementById("call-btn-9").addEventListener("click", function () {
         alert("Insufficient coins")
         return
     }
+
+    const data = {
+        name: "Bangladesh Railway Helpline",
+        date: new Date().toLocaleTimeString()
+    }
+    callHistory.push(data)
+    console.log(callHistory)
+
+    const callHistoryContainer = document.getElementById("call-his-container")
+    const div = document.createElement("div")
+    div.innerHTML = `
+<div class="flex justify-between  p-[10px] items-center rounded-2xl bg-[#dfefff6c] mb-[3px]">
+                    <div class="">
+                        <p class="font-semibold text-[18px]">${data.name}</p>
+                        <p>163</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+
+                    </div>
+                </div> 
+
+`
+    callHistoryContainer.appendChild(div)
 })
+
+
+// clear-btn function
+
+document.getElementById("clear-btn").addEventListener("click", function () {
+    alert("clearing all history")
+    const history = document.getElementById("call-his-container")
+    history.innerHTML = ""
+})
+
+
+
+
 
 
